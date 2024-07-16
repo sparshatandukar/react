@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ParentComponent from './components/toggleComponent/parentComponent';
+import ParentCounter from './components/counterComponent/parentCounter';
+import ParentMessage from './components/displayComponent/parentDisplay';
+import ToDoApp from './components/todo/ToDoApp';
+import AddView from './components/listView/AddView';
+import "./tailwind.css"
+import ContactForm from './components/Contactform/Contactform';
+import RegisterForm from './components/register/RegisterForm';
+import LoginForm from './components/login/LoginForm';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      {/* <ParentComponent/>
+      <ParentCounter/>
+      <ParentMessage/> */}
+      {/* <ToDoApp/>
+      <AddView/> */}
+      <ContactForm/>
+      <RegisterForm/>
+      <LoginForm/>
     </div>
+    </>
   );
 }
 
